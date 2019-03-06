@@ -78,3 +78,7 @@ for col in specs_to_mode:
 # -------- drop missing values
 
 imputed_data = imputed_data.dropna()
+
+# -------- export 
+
+imputed_data.to_csv(r'')
