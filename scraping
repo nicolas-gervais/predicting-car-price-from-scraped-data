@@ -1,0 +1,96 @@
+import bs4 as bs
+from urllib.request import Request, urlopen
+import pandas as pd
+
+website = ""
+
+def new_cars(): # 1 makes url
+    new_cars_list = []
+    req = Request(website + "/new-cars", headers={'User-Agent': 'Mozilla/5.0'})
+    web_page = urlopen(req).read()
+    soup = bs.BeautifulSoup(web_page, 'lxml')
+    for a in soup.find_all("a", {"class": "add-zip"}):
+        new_cars_list.append(a['href'])
+    return new_cars_list
+
+def make_new(): # 2 makes and models url
+    make_new_list = []
+    for make in new_cars():
+        req = Request(website + make, headers={'User-Agent': 'Mozilla/5.0'})
+        web_page = urlopen(req).read()
+        soup = bs.BeautifulSoup(web_page, 'lxml')
+        for div in soup.find_all("div", {"class": "name"}):
+            make_new_list.append(div.find_all("a")[0]['href'])
+    return make_new_list
+
+def make_model(): # 3 makes models and year url
+    make_model_list = []
+    for make in make_new():
+        print(make[0])
+        req = Request(website + make[0], headers={'User-Agent': 'Mozilla/5.0'})
+        web_page = urlopen(req).read()
+        soup = bs.BeautifulSoup(web_page, 'lxml')
+        for div in soup.find_all("a", {"class": "btn avail-now first-item"}):
+            make_model_list.append(div['href'])
+            print(div['href'])
+        for div in soup.find_all("a", {"class": "btn used 1"}):
+            make_model_list.append(div['href'])
+            print(div['href'])
+        for div in soup.find_all("a", {"class": "btn 1"})[:2]:
+            make_model_list.append(div['href'])
+            print(div['href'])
+    return make_model_list
+
+def overview(): # 4 models years trims specifications url
+    overview_list = []
+    for row in make_model():
+        req = Request(website + row[0], headers={'User-Agent': 'Mozilla/5.0'})
+        web_page = urlopen(req).read()
+        soup = bs.BeautifulSoup(web_page, 'lxml')
+        for id in soup.find_all("a", {"id": "ymm-nav-specs-btn"}):
+            overview_list.append(id['href'])
+            print(id['href'])
+    return overview_list
+
+def trims(): # 5 trims url
+    trim_list = []
+    ix = 0
+    for row in overview():
+        req = Request(website + row[0], headers={'User-Agent': 'Mozilla/4.0'})
+        web_page = urlopen(req).read()
+        soup = bs.BeautifulSoup(web_page, 'lxml')
+        div = soup.find_all("div", {"class": "block-inner"})[-1]
+        div_a = div.find_all("a")
+        for i in range(len(div_a)):
+            trim_list.append(div_a[-i]['href'])
+            print(str(ix) + " " + div_a[-i]['href'])
+            ix += 1
+    return trim_list
+
+def specifications(): # 6 specifications scraping
+    specifications_table = pd.DataFrame()
+    ix = 0
+    for row in trims():
+        req = Request(website + row[0], headers={'User-Agent': 'Mozilla/5.0'})
+        web_page = urlopen(req).read()
+        soup = bs.BeautifulSoup(web_page, 'lxml')
+        specifications_df = pd.DataFrame(columns=[soup.find_all("title")[0].text[:-15]])
+        make_text = soup.find_all("a", {"id": "a_bc_1"})[0].text.strip()
+        specifications_df.loc["Make"] = make_text
+        model_text = soup.find_all("a", {"id": "a_bc_2"})[0].text.strip()
+        specifications_df.loc["Model"] = model_text
+        msrp_text = soup.find_all("div", {"class": "price"})[0]
+        if len(msrp_text.find_all("a")) >= 1:
+            specifications_df.loc["MSRP"] = msrp_text.find_all("a")[0].text
+        else:
+            print("Problem with " + str(soup.find_all("title")[0].text[:-15]))
+        ix += 1
+        print(str(ix) + " " + row[0])
+        for div in soup.find_all("div", {"class": "specs-set-item"}):
+            row_name = div.find_all("span")[0].text
+            row_value = div.find_all("span")[1].text
+            specifications_df.loc[row_name] = row_value
+        specifications_table = pd.concat([specifications_table, specifications_df], axis=1, sort=False)
+    return specifications_table
+
+specifications = pd.DataFrame(specifications())
