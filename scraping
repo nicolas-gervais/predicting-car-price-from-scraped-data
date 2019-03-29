@@ -26,7 +26,7 @@ def model_menu():
         soup = fetch(website, make)
         for div in soup.find_all("a", {"class": "btn avail-now first-item"}):
             model_menu_list.append(div['href'])
-        for div in soup.find_all("a", {"class": "btn 1"}): # js doesn't want that shit in the data
+        for div in soup.find_all("a", {"class": "btn 1"}): 
             model_menu_list.append(div['href'])
     return model_menu_list
 
