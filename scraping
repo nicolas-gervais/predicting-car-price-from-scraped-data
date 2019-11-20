@@ -1,3 +1,9 @@
+## please note that this webscraper most likely won't work, \
+## thecarconnection.com has noticed the use of this webscraper and did not \
+## make use of different URLs for different trims anymore. i will attempt to \
+## update the code shortly, at a significant loss, because it will reduce \
+## the number of cars by a factor of 10-15. sorry for the inconvenience
+
 import bs4 as bs
 from urllib.request import Request, urlopen
 import pandas as pd
