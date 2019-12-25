@@ -1,4 +1,4 @@
-![The Car Connection](https://pbs.twimg.com/profile_images/1017110292306845696/efVOSjrg_400x400.jpg)
+![The Car Connection](https://www.globenewswire.com/news-release/logo/491781/0/491781.png)
 # predicting-car-price-from-scraped-data
 School Project
 
