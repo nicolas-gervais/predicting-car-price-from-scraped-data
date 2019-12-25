@@ -1,4 +1,4 @@
-! [Alt Text](https://pbs.twimg.com/profile_images/1017110292306845696/efVOSjrg_400x400.jpg)
+![The Car Connection](https://pbs.twimg.com/profile_images/1017110292306845696/efVOSjrg_400x400.jpg)
 # predicting-car-price-from-scraped-data
 School Project
 
