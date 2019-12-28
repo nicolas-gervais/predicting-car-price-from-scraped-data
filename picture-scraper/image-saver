@@ -1,0 +1,29 @@
+import pandas as pd
+import os
+from PIL import Image
+import requests
+from io import BytesIO
+from string import ascii_letters
+from numpy.random import choice
+
+char = list(ascii_letters)
+path = 'f:/cars'
+
+if not os.path.isdir(path):
+    os.mkdir(path)
+
+os.chdir(path)
+
+df = pd.read_csv('c:/users/nicolas/documents/data/thecarconnection/id_and_pic_url.csv')
+
+df = df.drop_duplicates('Picture')
+
+def get_pic(link, name):
+    try:
+        r = requests.get(link, timeout=10)
+        im = Image.open(BytesIO(r.content))
+        im.save(name + '_{}.jpg'.format(''.join(choice(char, 3))))
+    except:
+        print('Problem with {}'.format(link))
+for _, (tag, url) in df.iloc[8000:, :].iterrows():
+    get_pic(link=url, name=tag)
