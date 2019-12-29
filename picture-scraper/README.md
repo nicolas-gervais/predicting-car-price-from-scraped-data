@@ -24,7 +24,7 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 | `Front Wheel Size`  | 18 inches  |
 | `Horsepower`  | 210 hp |
 | `Displacement`  | 2.0L  |
-| `Engine Typ`'  | 4 cylinders  |
+| `Engine Type`  | 4 cylinders  |
 | `Width`  | 73 inches  |
 | `Height`  | 54 inches  |
 | `Length`  | 182 inches  |
