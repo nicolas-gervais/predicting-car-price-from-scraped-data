@@ -39,8 +39,11 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 > <font color='red'>__WARNING:__</font> Many pics have duplicates. 
 
 ### HOW TO RUN
-- [image-scraper](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-scraper): scrapes all specifications and pictures
-- [id-and-pic-url](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/id-and-picture-url): from the previous `csv`, turns it into just a picture url and id tag
-- [image-saver](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-saver): turns all picture links in a picture, labeled
-- [interior-exterior-dispatcher](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/interior-exterior-dispatcher): sends the pictures _unlikely_ to be interior to a new folder
+1. [image-scraper](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-scraper): scrapes all specifications and pictures
+
+.2 [id-and-pic-url](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/id-and-picture-url): from the previous `csv`, turns it into just a picture url and id tag
+
+3. [image-saver](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-saver): turns all picture links in a picture, labeled
+
+4. [interior-exterior-dispatcher](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/interior-exterior-dispatcher): sends the pictures _unlikely_ to be interior to a new folder
 You might have to manage your own directories.
