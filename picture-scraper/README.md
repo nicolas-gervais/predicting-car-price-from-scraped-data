@@ -43,3 +43,5 @@ That's:
 - 2 passenger doors
 - Convertible (body style)
 - random 3 character string
+
+> <font color='red'>__WARNING:__</font> Many pics have duplicates. 
