@@ -7,6 +7,7 @@ All labeled by:
 - Year
 - Price
 - Horsepower
+- Body style (pickup, convertible, 4dr car, etc)
 - etc
 
 Filename is tagged like this, separated by an underscore:
