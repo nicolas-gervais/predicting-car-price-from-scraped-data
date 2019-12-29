@@ -25,23 +25,25 @@ Example:
 ```
 Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 ```
-That's:
-- Audi
-- A5
-- 2013 
-- 43,000$
-- 18" front wheel
-- 210 horsepower
-- 2.0 engine displacement
-- 4 cylinder engine
-- 73" width
-- 54" height
-- 182" length
-- 24 mpg gas mileage
-- Front wheel drive
-- 4 passenger capacity
-- 2 passenger doors
-- Convertible (body style)
-- random 3 character string
+| Spec Name  | Value |
+| ------------- | ------------- |
+| Make  | Audi  |
+| Model  | A5  |
+| Year  | 2013  |
+| MSRP  | $43,000  |
+| Front Wheel Size  | 18 inches  |
+| Horsepower  | 210 hp |
+| Displacement  | 2.0L  |
+| Engine Type  | 4 cylinders  |
+| Width  | 73 inches  |
+| Height  | 54 inches  |
+| Length  | 182 inches  |
+| Gas Mileage  | 24 mpg  |
+| Drivetrain  | Front wheel drive  |
+| Passenger Capacity  | 4  |
+| Passenger Doors | 2 |
+| Body Style | Convertible |
+| Random String | eUH |
+
 
 > <font color='red'>__WARNING:__</font> Many pics have duplicates. 
