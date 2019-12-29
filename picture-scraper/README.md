@@ -17,23 +17,23 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 ```
 | Spec Name  | Value |
 | ------------- | ------------- |
-| 'Make'  | Audi  |
-| 'Model'  | A5  |
-| 'Year'  | 2013  |
-| 'MSRP'  | $43,000  |
-| 'Front Wheel Size'  | 18 inches  |
-| 'Horsepower'  | 210 hp |
-| 'Displacement'  | 2.0L  |
-| 'Engine Type'  | 4 cylinders  |
-| 'Width'  | 73 inches  |
-| 'Height'  | 54 inches  |
-| 'Length'  | 182 inches  |
-| 'Gas Mileage'  | 24 mpg  |
-| 'Drivetrain'  | Front wheel drive  |
-| 'Passenger Capacity'  | 4  |
-| 'Passenger Door's | 2 |
-| 'Body Style' | Convertible |
-| 'Random String' | eUH |
+| `Make`  | Audi  |
+| `Model`  | A5  |
+| `Year`  | 2013  |
+| `MSRP`  | $43,000  |
+| `Front Wheel Size`  | 18 inches  |
+| `Horsepower`  | 210 hp |
+| `Displacement`  | 2.0L  |
+| `Engine Typ`'  | 4 cylinders  |
+| `Width`  | 73 inches  |
+| `Height`  | 54 inches  |
+| `Length`  | 182 inches  |
+| `Gas Mileage`  | 24 mpg  |
+| `Drivetrain`  | Front wheel drive  |
+| `Passenger Capacity`  | 4  |
+| `Passenger Doors` | 2 |
+| `Body Style` | Convertible |
+| `Random String` | eUH |
 
 
 > <font color='red'>__WARNING:__</font> Many pics have duplicates. 
