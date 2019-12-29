@@ -19,7 +19,7 @@ impt_cols = [
     'Length, Overall (in)', 'Gas Mileage', 'Drivetrain', 'Passenger Capacity', 'Passenger Doors',
     'Body Style']
 ```
-__There are 3 random characters in the end, because there are 150 pictures for each car.__
+__There are 3 random characters in the end, to make a unique filename ID.__
 
 Example:
 ```
