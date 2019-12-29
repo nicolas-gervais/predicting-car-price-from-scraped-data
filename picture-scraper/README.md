@@ -25,3 +25,20 @@ Example:
 ```
 Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 ```
+That's:
+- Audi
+- A5
+- 2013 
+- 43,000$
+- 18" front wheel
+- 210 horsepower
+- 2.0 engine displacement
+- 4 cylinder engine
+- 73" width
+- 54" height
+- 182" length
+- 24 mpg gas mileage
+- Front wheel drive
+- 4 passenger capacity
+- 2 passenger doors
+- random 3 character string
