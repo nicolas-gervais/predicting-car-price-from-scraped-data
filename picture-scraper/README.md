@@ -47,4 +47,4 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 
 4. [interior-exterior-dispatcher](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/interior-exterior-dispatcher): sends the pictures _unlikely_ to be interior to a new folder
 
-> You might have to manage your own directories/folders.
+> __WARNING:__ You might have to manage your own directories/folders.
