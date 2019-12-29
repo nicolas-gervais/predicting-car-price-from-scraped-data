@@ -47,4 +47,6 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 
 4. [interior-exterior-dispatcher](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/interior-exterior-dispatcher): sends the pictures _unlikely_ to be interior to a new folder
 
+5. __BONUS__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/Example%20%E2%80%94%20Audi%20vs%20BMW%20ConvNet.ipynb): example of a deep learning classification task with `Pytorch`
+
 > __WARNING:__ You might have to manage your own directories/folders.
