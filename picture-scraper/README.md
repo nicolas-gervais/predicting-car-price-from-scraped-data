@@ -41,4 +41,5 @@ That's:
 - Front wheel drive
 - 4 passenger capacity
 - 2 passenger doors
+- Convertible (body style)
 - random 3 character string
