@@ -40,13 +40,9 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 > <font color='red'>__WARNING:__</font> Many pics have duplicates. 
 
 ### HOW TO RUN
-1. [image-scraper](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-scraper): scrapes all specifications and pictures
-
-2. [id-and-pic-url](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/id-and-picture-url): from the previous `csv`, turns it into just a picture url and id tag
-
-3. [image-saver](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/image-saver): turns all picture links in a picture, labeled
-
-4. [interior-exterior-dispatcher](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/interior-exterior-dispatcher): sends the pictures _unlikely_ to be interior to a new folder
+```
+$ git clone https://github.com/libgit2/libgit2 mylibgit
+```
 
 5. __BONUS__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/Example%20%E2%80%94%20Audi%20vs%20BMW%20ConvNet.ipynb): example of a deep learning classification task with `Pytorch`
 
