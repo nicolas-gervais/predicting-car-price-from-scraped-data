@@ -8,7 +8,7 @@ template = 'https://images.hgmsites.net/'
 
 
 def run():
-    df = pd.read_csv('specs-and-pics.csv', dtype=str, index_col=0).T.iloc[:100, :]  # REMOVE REMOVE
+    df = pd.read_csv('specs-and-pics.csv', dtype=str, index_col=0).T 
 
     df = df.iloc[:, :-121]
 
