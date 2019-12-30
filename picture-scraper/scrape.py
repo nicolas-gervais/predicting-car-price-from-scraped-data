@@ -24,7 +24,7 @@ def all_makes():
 
 def make_menu(listed):
     make_menu_list = []
-    for make in listed[1:3]: # REMOVE REMOVE REMOVE REMOVE REMOVE
+    for make in listed: 
         for div in fetch(website, make).find_all("div", {"class": "name"}):
             make_menu_list.append(div.find_all("a")[0]['href'])
     return make_menu_list
