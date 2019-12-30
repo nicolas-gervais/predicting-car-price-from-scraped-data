@@ -1,6 +1,7 @@
 # Car Picture Scraper
 It scrapes 297,000 pictures, of which around 198,000 unique URLs. Many of these are interior images, which are useless. You should have around 60,000 pictures in the end. 
 
+<img src=https://user-images.githubusercontent.com/46652050/71590299-ebd23f00-2af5-11ea-916f-f19ff6fad04a.jpg width=200 img>
 All filenames are tagged like this, separated by an underscore:
 
 ```
