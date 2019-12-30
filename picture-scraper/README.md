@@ -40,10 +40,6 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 > <font color='red'>__WARNING:__</font> Many pics have duplicates. 
 
 ### HOW TO RUN
-```
-$ git clone https://github.com/libgit2/libgit2 mylibgit
-```
+Copy all `.py` files into a folder. Make sure you have all the dependencies installed (e.g., `bs4`, `requests`, etc). Then run `main.py`. 
 
-5. __BONUS__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/Example%20%E2%80%94%20Audi%20vs%20BMW%20ConvNet.ipynb): example of a deep learning classification task with `Pytorch`
-
-> __WARNING:__ You might have to manage your own directories/folders.
+__EXAMPLE__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/Example%20%E2%80%94%20Audi%20vs%20BMW%20ConvNet.ipynb): example of a deep learning classification task with `Pytorch`
