@@ -37,7 +37,7 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 | `Random String` | eUH |
 
 
-> <font color='red'>__WARNING:__</font> Many pics have duplicates. 
+> __WARNING:__ Many pics have duplicates, even though I removed duplicate URLs.
 
 ## HOW TO RUN
 Copy all `.py` files into a folder. Make sure you have all the dependencies installed (e.g., `bs4`, `requests`, etc). Then run `main.py`. Try it with a portion of the data first because there seems to be a problem with `save.py`. 
