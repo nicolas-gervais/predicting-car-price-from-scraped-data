@@ -23,13 +23,13 @@ os.chdir('pictures/')
 
 
 def get_pic(link, name):
-    # try:
-    print(link)
-    r = requests.get(link, timeout=10)
-    im = Image.open(BytesIO(r.content))
-    im.save(name + '_{}.jpg'.format(''.join(choice(char, 3))))
-    # except:
-    print('Problem with {}'.format(link))
+    try:
+        print(link)
+        r = requests.get(link, timeout=10)
+        im = Image.open(BytesIO(r.content))
+        im.save(name + '_{}.jpg'.format(''.join(choice(char, 3))))
+    except:
+        print('Problem with {}'.format(link))
 
 
 if __name__ == '__main__':
