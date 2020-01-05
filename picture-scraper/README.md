@@ -61,7 +61,7 @@ __EXAMPLE__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-
     - In `scrape.py`, row 68, change this line:
     - `for ix, photo in enumerate(re.findall('sml.+?_s.jpg', fetch_pics_url)[:150], 1):`
     - to this line:
-    - `for ix, photo in enumerate(re.findall('lrg.+?_s.jpg', fetch_pics_url)[:150], 1):`
+    - `for ix, photo in enumerate(re.findall('lrg.+?_l.jpg', fetch_pics_url)[:150], 1):`
     - You can use _sml_, _med_, _lrg_ for your preferred image size
     
 ## FILES
