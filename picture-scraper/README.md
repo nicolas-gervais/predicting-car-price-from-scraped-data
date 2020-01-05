@@ -69,5 +69,6 @@ __EXAMPLE__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-
 | ---   | ---         | --- |
 | `scrape.py` | Creates a `df` of all cars with their specs/pics URLs | `specs-and-pics.csv` |  
 | `tag.py` | Turns the previous `df` into one tag per URL | `id_and_pic_url.csv` | 
-| `save.py` | Turns all rows in the previous `df` to a picture named with the tag | `pictures/` Folder | 
-| `select.py` | Uses `numpy` to delete interior pictures, based on pixel color | `exterior/` Folder |
+| `save.py` | Turns all rows in the previous `df` to a picture named with the tag | `pictures/*.jpg`  | 
+| `select.py` | Uses `numpy` to delete interior pictures, based on pixel color | `exterior/*.jpg` |
+| `main.py` | Runs all other files | `None` | 
