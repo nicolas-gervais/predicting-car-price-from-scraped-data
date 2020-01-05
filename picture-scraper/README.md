@@ -4,7 +4,9 @@ It scrapes 297,000 pictures, of which around 198,000 unique URLs. Many of these 
 | Size | Download | Author | Source | Dependencies | 
 | --- | --- | --- | --- | --- |
 | 681 MB | [Link](https://drive.google.com/open?id=1TQQuT60bddyeGBVfwNOk6nxYavxQdZJD) | Nicolas Gervais | [The Car Connection](https://www.thecarconnection.com/) | `pandas`, `PIL`, `requests`, `bs4`, `urllib`, `numpy` |
-<img src=https://user-images.githubusercontent.com/46652050/71590299-ebd23f00-2af5-11ea-916f-f19ff6fad04a.jpg width=200 img>
+
+<img src=https://user-images.githubusercontent.com/46652050/71590299-ebd23f00-2af5-11ea-916f-f19ff6fad04a.jpg height=150 align=center img>
+
 All filenames are tagged like this, separated by an underscore:
 
 ```
@@ -43,8 +45,29 @@ Audi_A5_2013_43_18_210_20_4_73_54_182_24_FWD_4_2_Convertible_eUH.jpg
 > __WARNING:__ Many pics have duplicates, even though I removed duplicate URLs.
 
 ## HOW TO RUN
-Copy all `.py` files into a folder. Make sure you have all the dependencies installed _and up to date_ (e.g., `bs4`, `requests`, etc). Then run `main.py`. I suggest you try it with a portion of the data first, in case an error emerges with something in the 3rd or 4th `.py` file. 
+1. Copy all `.py` files into a folder. 
+    - Make sure you have all the dependencies installed _and up to date_ (e.g., `bs4`, `requests`, etc).
+2. In `main.py`, set `path` to where the files are, and `directory` where you want the images to land
+    - You do not need to create the directory yourself
+3. Run `main.py`. I suggest you try it with a portion of the data first, in case an error emerges later. 
+    - For instance, in `scrape.py` line 27, replace `for make in listed:` to `for make in listed[1:3]:`
 
 __EXAMPLE__. [Example — Audi vs BMW ConvNet.ipynb](https://github.com/nicolas-gervais/predicting-car-price-from-scraped-data/blob/master/picture-scraper/Example%20%E2%80%94%20Audi%20vs%20BMW%20ConvNet.ipynb): example of a deep learning classification task with `Pytorch`
 
 > __WARNING:__ You may have issues if you use Python 3.6
+
+## FAQ
+1. How do I get the large pictures? 
+    - In `scrape.py`, row 68, change this line:
+    - `for ix, photo in enumerate(re.findall('sml.+?_s.jpg', fetch_pics_url)[:150], 1):`
+    - to this line:
+    - `for ix, photo in enumerate(re.findall('lrg.+?_s.jpg', fetch_pics_url)[:150], 1):`
+    - You can use _sml_, _med_, _lrg_ for your preferred image size
+    
+## FILES
+| FILES | DESCRIPTION | EXPORT | 
+| ---   | ---         | --- |
+| `scrape.py` | Creates a `df` of all cars with their specs/pics URLs | `specs-and-pics.csv` |  
+| `tag.py` | Turns the previous `df` into one tag per URL | `id_and_pic_url.csv` | 
+| `save.py` | Turns all rows in the previous `df` to a picture named with the tag | `pictures/` Folder | 
+| `select.py` | Uses `numpy` to delete interior pictures, based on pixel color | `exterior/` Folder |
