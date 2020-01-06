@@ -1,4 +1,5 @@
-![The Car Connection](https://www.globenewswire.com/news-release/logo/491781/0/491781.png)
+<img src=https://www.globenewswire.com/news-release/logo/491781/0/491781.png align=right img>
+
 # Welcome to _The Car Connection Dataset_ :tm:
 School Project
 
